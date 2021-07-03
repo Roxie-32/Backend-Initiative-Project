@@ -98,8 +98,13 @@ class LoginController extends Controller
             $user->provider_id = $data->id;
             $user->avatar = $data->avatar;
             $user->save();
+            
+            $token = $user->createToken('myapptoken')->plainTextToken;
+
         }
 
         Auth::login($user);
+        $token = $user->createToken('myapptoken')->plainTextToken;
+
     }
 }

@@ -36,6 +36,7 @@ class RentalController extends Controller
     //Get a particular Rental
     public function show(Rental $rental)
     {
+        
         return new RentalResource($rental);
     }
 

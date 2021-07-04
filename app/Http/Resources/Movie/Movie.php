@@ -20,6 +20,7 @@ class Movie extends JsonResource
             'genre' =>  $this->genre,
             'producer' =>  $this->producer,
             'synopsis' =>  $this->synopsis,
+            'user_id' => $this->user_id,
         ];
     }
 }

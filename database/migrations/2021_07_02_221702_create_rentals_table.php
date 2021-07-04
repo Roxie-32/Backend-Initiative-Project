@@ -16,7 +16,8 @@ class CreateRentalsTable extends Migration
         Schema::create('rentals', function (Blueprint $table) {
             $table->id();
             $table->string('movie_title');
-            $table->dateTime('datetime');     
+            $table->dateTime('datetime');   
+            $table->string('user_id');  
             $table->timestamps();
         });
     }

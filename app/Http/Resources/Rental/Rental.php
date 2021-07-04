@@ -17,6 +17,7 @@ class Rental extends JsonResource
         return [
             'movie_title' => $this->movie_title,
             'datetime' => $this->datetime,
+            'user_id' => $this->user_id,
       
             
         ];
